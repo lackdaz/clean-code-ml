@@ -25,3 +25,6 @@ class TestWorkshop(unittest.TestCase):
 
       assert_frame_equal(expected, actual)
 
+    def test_confirm_fail(self):
+      assertEquals(1, 2)
+

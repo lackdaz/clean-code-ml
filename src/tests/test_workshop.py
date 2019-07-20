@@ -4,7 +4,6 @@ import numpy as np
 from pandas.testing import assert_frame_equal
 from src.workshop import *
 
-
 class TestWorkshop(unittest.TestCase):
     def test_df_should_equal_itself(self):
         df = pd.DataFrame({
@@ -24,7 +23,4 @@ class TestWorkshop(unittest.TestCase):
       actual = impute_nans(df, columns=["some_column"])
 
       assert_frame_equal(expected, actual)
-
-    def test_confirm_fail(self):
-      assertEquals(1, 2)
 

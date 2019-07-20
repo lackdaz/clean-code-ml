@@ -7,5 +7,5 @@ def add(a, b):
 def impute_nans(df, columns):
   for column in columns:
     processed_data = pd.DataFrame({})
-    processed_data[column] = df[column].fillna(df[column].dropna().median())
+    processed_data[column] = df[column].fillna(df[column].dropna().mean())
   return processed_data

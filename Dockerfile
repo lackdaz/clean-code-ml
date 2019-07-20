@@ -11,4 +11,5 @@ RUN git config --global user.name "lackdaz"
 WORKDIR /home/clean-code-ml
 
 COPY . /home/clean-code-ml
+
 RUN pip install -U pip && pip install -r requirements.txt
